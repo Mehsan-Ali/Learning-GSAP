@@ -13,6 +13,7 @@ function App() {
           <Routes>
             <Route path="/gsapto" element={<GsapTo />} />
             <Route path="/gsapfrom" element={<GsapFrom />} />
+            <Route path="/gsapfromto" element={<GsapFrom />} />
             <Route path="/" element={<Home />} />
           </Routes>
         </Router>
