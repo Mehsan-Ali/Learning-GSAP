@@ -3,15 +3,7 @@ import gsap from 'gsap'
 
 const GsapFrom = () => {
   useGSAP(() => {
-    gsap.fromTo("#green-box", {
-      x: 0,
-      repeat: -1,
-      yoyo: true,
-      rotate: 0,
-      borderRadius: 0,
-      duration: 2,
-      ease: "power1.inOut"
-    }, {
+    gsap.from("#green-box",{
       x: 300,
       repeat: -1,
       yoyo: true,

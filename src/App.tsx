@@ -3,6 +3,8 @@ import './App.css'
 import GsapFrom from './pages/GsapFrom'
 import GsapTo from './pages/GsapTo'
 import Home from './pages/Home'
+import GsapTimeline from './pages/GsapTimeline'
+import GsapFromTo from './pages/GsapFromTo'
 
 function App() {
 
@@ -13,7 +15,8 @@ function App() {
           <Routes>
             <Route path="/gsapto" element={<GsapTo />} />
             <Route path="/gsapfrom" element={<GsapFrom />} />
-            <Route path="/gsapfromto" element={<GsapFrom />} />
+            <Route path="/gsapfromto" element={<GsapFromTo />} />
+            <Route path="/gsaptimeline" element={<GsapTimeline />} />
             <Route path="/" element={<Home />} />
           </Routes>
         </Router>

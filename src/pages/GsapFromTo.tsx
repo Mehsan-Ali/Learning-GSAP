@@ -3,9 +3,19 @@ import gsap from "gsap";
 
 const GsapFromTo = () => {
     useGSAP(() => {
-        gsap.fromTo("#red-box", 
-            { x: 0, y: 0 }, 
-            { x: 300, y: 200, duration: 2 });
+        gsap.fromTo("#red-box", {
+            x: 0,
+            borderRadius: 0,
+            rotate: 0,
+        }, {
+            x: 300,
+            repeat: -1,
+            yoyo: true,
+            borderRadius: '100%',
+            rotate: 360,
+            duration: 2,
+            ease: "power1.inOut"
+        });
     }, [])
     return (
         <main>
